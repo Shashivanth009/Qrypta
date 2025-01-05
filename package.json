@@ -1,13 +1,13 @@
 {
-  "homepage": "https://shashivanth009.github.io/QryptaX",
+  "homepage": "https://shashivanth009.github.io/Qrypta/",
   "name": "vite-react-typescript-starter",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
+    "dev": "vite",
     "build": "vite build",
     "build:server": "tsc -p tsconfig.node.json",
     "lint": "eslint .",
