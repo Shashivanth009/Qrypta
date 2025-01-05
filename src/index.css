@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    @apply scroll-smooth;
+  }
+}
+
+.particles {
+  background: transparent;
+  background-image: radial-gradient(#4f46e5 1px, transparent 1px);
+  background-size: 32px 32px;
+  animation: particleAnimation 20s linear infinite;
+}
+
+@keyframes particleAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-32px);
+  }
+}
+
+/* Dark mode styles */
+.dark {
+  color-scheme: dark;
+}
+
+/* Smooth transitions for dark mode */
+* {
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
